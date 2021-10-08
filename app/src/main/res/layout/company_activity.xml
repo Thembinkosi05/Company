@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#434040">
+
+    <EditText
+        android:id="@+id/Comp_Name"
+        android:layout_width="273dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="94dp"
+        android:ems="10"
+        android:hint="Company Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/comp_Address"
+        android:layout_width="261dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="116dp"
+        android:ems="10"
+        android:hint="Company Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Comp_Name" />
+
+    <Button
+        android:id="@+id/btn_addCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="102dp"
+        android:text="Add Company"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comp_Address" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
